@@ -1,0 +1,31 @@
+.component {
+    position: relative;
+    text-decoration: none;
+    transition: all ease-in 0.3s;
+
+    color: black;
+
+
+
+    &::after{
+        content: '';
+        position: absolute;
+        opacity: 0;
+        transition: all ease-in 0.3s;
+
+        height: 2px;
+        width: 100%;
+        bottom: -21px;
+        left: 0;
+
+        background-color: rgb(255, 0, 0);
+    }
+
+    &:hover{
+        color: brown;
+    }
+
+    &:hover::after {
+        opacity: 100%;
+    }
+}
